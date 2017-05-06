@@ -1,0 +1,13 @@
+§ =============================================================
+§  User Macros
+§ =============================================================
+
+SetMacro( 'AUTHOR',      'Sebastian Schubert' )
+SetMacro( 'COPYRIGHT',   'Copyright (c) |YEAR|, |AUTHOR|' )
+SetMacro( 'EMAIL',       'sschubert932@gmail.com' )
+SetMacro( 'LICENSE',     'GNU General Public License' )
+
+§ =============================================================
+§  File Includes and Shortcuts
+§ =============================================================
+

@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/kelaun/git-repos/puppetdap3/modules/dap/manifests/dlp'
+let g:netrw_dirhist_2='/mnt/multimedia/Linux/homepage/html'
+let g:netrw_dirhist_3='/home/kelaun/Scripts'
+let g:netrw_dirhist_4='/home/kelaun/git-repos/scripts'

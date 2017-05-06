@@ -1,0 +1,1 @@
+set ft=haml
