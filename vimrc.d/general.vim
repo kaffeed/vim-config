@@ -154,12 +154,6 @@ let g:ycm_semantic_triggers.tex = [
             \ 're!\\[A-Za-z]*',
         \ ]
 
-
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-
 let g:ycm_rust_src_path = '/usr/src/rust/src'
 
 "Latex stuff
@@ -168,9 +162,6 @@ let g:tex_fast = 'cmMprs'
 let g:tex_conceal = ''
 let g:tex_fold_enabled = 0
 let g:tex_comment_nospell = 1
-
-"FZF Stuff
-let g:fzf_launcher = 'urxvt -geometry 120x30 -e sh -c %s'
 
 "Buffergator remove that stupid resizing
 let g:buffergator_autoexpand_on_split = 0
@@ -185,4 +176,19 @@ let g:ctrlp_custom_ignore = {
 	\ 'file': '\v\.(exe|so|dll|aux|glo|idx|log|toc|ist|acn|acr|alg|bbl|blg|dvi|glg|gls|ilg|ind|lof|lot|maf|mtc|mtc1|out|synctex.gz)$',
 	\ }
 
+"TypeScript configuration
+let g:typescript_compiler_binary = 'tsc'
 
+set statusline+=%#warningmsg#
+set statusline+=%{syntasticstatuslineflag()}
+set statusline+=%*
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_typescript_checkers = ['tsuquyomi']
+let g:tsuquyomi_shortest_import_path = 1
+
+if !exists('g:ycm_semantic_triggers')
+    let g:ycm_semantic_triggers = {}
+endif
+
+let g:ycm_semantic_triggers['typescript'] = ['.']

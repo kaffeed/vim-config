@@ -7,7 +7,7 @@ augroup LocalAutocommands
   au!
 
   "Autochangedirectory
-  "autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | silent! lcd %:p:h | endif
+  autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | silent! lcd %:p:h | endif
 
 
   " Set the current working directory when launching vim
@@ -59,6 +59,16 @@ augroup END
 augroup goyo_commands
     autocmd! User GoyoEnter Limelight
     autocmd! User GoyoLeave Limelight!
+augroup END
+
+augroup typescript_commands
+    autocmd QuickFixCmdPost [^l]* nested cwindow
+    autocmd QuickFixCmdPost l* nested lwindow
+    set ballooneval
+    autocmd FileType typescript setlocal balloonexpr=tsuquyomi#balloonexpr()
+    autocmd FileType typescript nmap <buffer> <LocalLeader>e <Plug>(TsuquyomiRenameSymbol)
+    autocmd FileType typescript nmap <buffer> <LocalLeader>E <Plug>(TsuquyomiRenameSymbolC)
+    autocmd FileType typescript :set makeprg=tsc
 augroup END
 
 augroup omnisharp_commands

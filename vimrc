@@ -60,7 +60,6 @@ Plug 'amix/vim-zenroom2'
 Plug 'junegunn/goyo.vim'
 Plug 'rhysd/vim-grammarous'
 Plug 'junegunn/limelight.vim'
-Plug 'junegunn/fzf'
 Plug 'dracula/vim'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'chrisbra/unicode.vim'
@@ -81,7 +80,8 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'mattn/emmet-vim'
 Plug 'raimondi/delimitmate'
 Plug 'beloglazov/vim-online-thesaurus'
-
+Plug 'Quramy/vim-js-pretty-template'
+Plug 'jason0x43/vim-js-indent'
 call plug#end()
 
 " Source configurations
