@@ -4,8 +4,9 @@ let g:mapleader = ","
 nmap <leader>w :w!<cr>
 nmap <leader>q :q<cr>
 nmap <leader>Q :qall<cr>
+
 " Map W to sudo-write
-command W w !sudo tee % > /dev/null
+command! W w !sudo tee % > /dev/null
 
 nnoremap ; :
 imap jj <esc>

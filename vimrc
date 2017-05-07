@@ -11,7 +11,6 @@ set runtimepath^=$HOME/.vim/after
 set runtimepath^=/usr/share/vim/vimfiles/eclim
 
 " Plug
-
 call plug#begin('~/.vim/plugged')
 
 if has('python') || has('python3')
